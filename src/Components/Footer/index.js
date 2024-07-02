@@ -73,7 +73,7 @@ const Footer = () => {
       </div>
       <div className="m-4" />
       <div className="text-white container border-top border-bottom border-secondary">
-        <div className="m-5" />
+        <div className="m-3" />
         <div className="row">
           <div className="col-12 col-lg-8 mb-3 mb-lg-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
@@ -84,13 +84,13 @@ const Footer = () => {
             <Button btnTitle="SUBSCRIBE" />
           </div>
         </div>
-        <div className="m-5" />
+        <div className="m-3" />
       </div>
-      <div className="m-5" />
-      <p className="text-center text-white">
+      <div className="m-3" />
+      <p className="text-center text-white mb-0">
         Copyright © 2024 Treedac Innovations, All rights reserved.
       </p>
-      <div className="m-4" />
+      {/* <div className="m-2" /> */}
     </div>
   );
 };
