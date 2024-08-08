@@ -3,7 +3,6 @@ import Navbar from "../../Components/Navbar";
 import "./Home.css";
 import LogoSlider from "../../Components/LogoSlider";
 import Footer from "../../Components/Footer";
-import { Link } from "react-router-dom";
 const Home = () => {
   const cardsData = [
     {
@@ -74,123 +73,163 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <div className="container">
-        <div className="row">
-          <div className="col-6  d-flex flex-column justify-content-center">
-            <p
-              className="poppins-extrabold"
-              style={{ fontSize: 65, lineHeight: 1 }}
-            >
-              <span style={{ color: "#52B0AC" }}> We </span> specialize<br></br>
-              <span style={{ color: "#52B0AC" }}>in managing</span> what matters
-              <br></br> <span style={{ color: "#52B0AC" }}>to you</span>
-            </p>
-            <p className="poppins-medium">
-              Empowering the visionaries who dare to blaze their own trail,
-              crafting solutions for those who walk the entrepreneurial path.
-            </p>
-            <Link to="/Demo">
-              <button
-                className="poppins-medium px-2"
-                style={{
-                  border: "none",
-                  borderRadius: 5,
-                  padding: 5,
-                  width: 100,
-                }}
-              >
-                Demo
-              </button>
-            </Link>
+      {/* <img
+        src={require("../../Images/banner.png")}
+        alt={"bg"}
+        style={{ width: "100%" }}
+      /> */}
+      {/* <div style={{ position: "absolute", bottom: 100, left: 490 }}>
+        <button className="bg-white rounded-1 fw-bold px-5 py-2 border-0">
+          Demo
+        </button>
+      </div> */}
+      <div class="gradient-div">
+        <div className="d-flex flex-row justify-content-between align-items-center" style={{}}>
+          <div>
+            <span className="text-white poppins-medium">About treedac</span>
+            <h1 className="text-white poppins-bold" style={{fontSize:60}}>we specialize in</h1>
+            <span className="text-white poppins-medium">managing what matters to you</span>
+            <div className="mt-4" />
+            <button className="poppins-medium px-2" style={{border:'none',borderRadius:5, padding:5}}>Call For Demo</button>
           </div>
-          <div className="col-6 d-flex justify-content-center">
-            <img
-              src={require("../../Images/dashboardImage.png")}
-              style={{ width: 450, height: 450 }}
-            />
-          </div>
-        </div>
-        <div className="m-5" />
-        <div className="row">
-          <div className="col-2 poppins-medium mt-1">
-            <h1 className="">71k+</h1>
-            <span>Active Member</span>
-          </div>
-          <div className="col-2 poppins-medium mt-1">
-            <h1 className="">65k+</h1>
-            <span>Success Member</span>
-          </div>
-          <div className="col-2 poppins-medium mt-1">
-            <h1 className="">876k+</h1>
-            <span>Project Completed</span>
-          </div>
-          <div className="col-6 poppins-bold mt-1 d-flex justify-content-center align-items-center">
-            <span style={{ color: "#52B0AC", textAlign: "center" }}>
-              Capture current data with our system
-            </span>
-          </div>
-        </div>
-        <div className="m-5" />
-        <div className="row d-flex align-items-center">
-          <span
-            className="poppins-semibold"
-            style={{ color: "#52B0AC", position: "relative", top: 20 }}
-          >
-            <u>Feature</u>
-          </span>
-
-          <div className="col-3" style={{ color: "#52B0AC" }}>
-            <ul>
-              <li>Monitor time entry</li>
-              <li>Manage labour cost</li>
-              <li>Automate payroll</li>
-              <li>Manage labour cost</li>
-              <li>Automate payroll</li>
-              <li>Manage labour cost</li>
-            </ul>
-          </div>
-          <div className="col-3" style={{ color: "#52B0AC" }}>
-            <ul>
-              <li>Monitor time entry</li>
-              <li>Manage labour cost</li>
-              <li>Automate payroll</li>
-              <li>Manage labour cost</li>
-              <li>Automate payroll</li>
-              <li>Manage labour cost</li>
-            </ul>
-          </div>
-          <div className="col-2 d-flex flex-column justify-content-center align-items-center">
-            <img src={require("../../Images/motivation.png")} />
-            <h3 className="poppins-medium my-2" style={{ color: "#52B0AC" }}>
-              Moto
-            </h3>
-            <p className="poppins-regular" style={{ fontSize: 10 }}>
-              To Innovate and Provide cutting edge solutions in ever changing
-              work dynamics
-            </p>
-          </div>
-          <div className="col-2 d-flex flex-column justify-content-center align-items-center">
-            <img src={require("../../Images/motivation.png")} />
-            <h3 className="poppins-medium my-2" style={{ color: "#52B0AC" }}>
-              Mission
-            </h3>
-            <p className="poppins-regular" style={{ fontSize: 10 }}>
-              To Innovate and Provide cutting edge solutions in ever changing
-              work dynamics
-            </p>
-          </div>
-          <div className="col-2 d-flex flex-column justify-content-center align-items-center">
-            <img src={require("../../Images/motivation.png")} />
-            <h3 className="poppins-medium my-2" style={{ color: "#52B0AC" }}>
-              vision
-            </h3>
-            <p className="poppins-regular" style={{ fontSize: 10 }}>
-              To Innovate and Provide cutting edge solutions in ever changing
-              work dynamics
-            </p>
+          <div>
+            <div className="text-white poppins-medium mt-1">
+              <h1 className="mb-0">71k+</h1>
+              <span>Active Member</span>
+            </div>
+            <div className="text-white poppins-medium mt-1">
+              <h1 className="mb-0">65k+</h1>
+              <span>Success Member</span>
+            </div>
+            <div className="text-white poppins-medium mt-1">
+              <h1  className="mb-0">876k+</h1>
+              <span>Project Completed</span>
+            </div>
+       
           </div>
         </div>
       </div>
+      <div className="bannerbg ">
+        <div className="w-100 blurred-background"></div>
+        <div className="py-5 ">
+          <p
+            className="text-center text-white rubik-medium"
+            style={{ fontWeight: "bold" }}
+          >
+            OUR CULTURE
+          </p>
+          <h1 className="text-center text-white">
+            For entrepreneurs, by entrepreneurs.
+          </h1>
+          <p className="text-center text-white rubik-regular">
+            Empowering the visionaries who dare to blaze their own trail,
+            crafting solutions for those who walk the entrepreneurial path.
+          </p>
+          <p className="text-center text-white rubik-regular">
+            "Enterprising cutting edge solutions to make entrepreneurs achieve
+            their vision" - <strong>Treedac Innovations</strong>
+          </p>
+        </div>
+      </div>
+      <div style={{ backgroundColor: "#E7E7FF" }}>
+        <div className="w-100 blurred-background-logoSlider"></div>
+        <p className="text-center rubik-medium mb-4">
+          Thank's to our Partners :
+        </p>
+        <LogoSlider />
+        <div className="w-100 blurred-background"></div>
+      </div>
+      <div className="">
+        <div className="p-5" />
+        <div className="gridContainer d-flex">
+          {cardsData.map((card, index) => (
+            <div
+              className="card cardBg border-0"
+              key={index}
+              style={{ width: "18rem" }}
+            >
+              <div className="card-body cardData">
+                <div className="p-2" />
+                <div className="d-flex justify-content-center align-items-center">
+                  <img src={card.image} alt={card.title} />
+                </div>
+                <div className="p-2" />
+                <h5 className="card-title text-center text-uppercase">
+                  {card.title}
+                </h5>
+                <p className="card-text text-center">{card.text}</p>
+                <div className="p-1" />
+              </div>
+
+              <div className="card-body hover-text">
+                <div className="d-flex justify-content-center align-items-center text-center pt-5">
+                  <p className="">{card.hoverText}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="p-3" />
+      </div>
+      {/* <div className="p-5 my-0 mt-5 d-flex flex-row">
+        <div className="pt-5 mt-5" style={{ width: "80%" }}>
+          <p
+            className="rubik-medium text-dark font-weight-bold"
+            style={{ fontWeight: "bold" }}
+          >
+            OUR SERVICES
+          </p>
+          <h1 className="marcellus-regular text-dark">
+            Innovative, Customized and Flexible solutions to Grow your business
+          </h1>
+          <div className="gridContainer justify-content-start pt-5 d-flex">
+            {servicesData.map((card, index) => (
+              <div
+                className="card cardBg border-0"
+                key={index}
+                style={{ width: "18rem" }}
+              >
+                <div className="card-body">
+                  <div className="p-2" />
+                  <div className="">
+                    <img src={card.image} alt={card.title} />
+                  </div>
+                  <div className="p-2" />
+                  <h5 className="card-title text-uppercase">{card.title}</h5>
+                  <p className="card-text">{card.text}</p>
+                  <div className="p-1" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div style={{ width: "20%" }}>
+          <div className="gridContainer  d-flex">
+            {servicesData2.map((card, index) => (
+              <div
+                className="card cardBg bg-light mb-5 border-0"
+                key={index}
+                style={{ width: "18rem" }}
+              >
+                <div className="card-body bg-light">
+                  <div className="p-2" />
+
+                  <img src={card.image} alt={card.title} />
+
+                  <div className="p-4" />
+                  <h5
+                    className="marcellus-regular text-uppercase"
+                    style={{ fontSize: "28px" }}
+                  >
+                    {card.title}
+                  </h5>
+                  <div className="p-2" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div> */}
 
       <div className="container my-5">
         <div className="row">

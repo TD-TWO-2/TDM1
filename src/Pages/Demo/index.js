@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
-import "./Contactus.css";
+import "./Demo.css";
 import TextInput from "../../Components/TextInput";
 import Button from "../../Components/Button";
 import TextArea from "../../Components/TextArea";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
-const Contactus = () => {
+const Demo = () => {
   const [value, setValue] = useState();
   return (
     <>
@@ -15,16 +15,22 @@ const Contactus = () => {
       <div className="m-5" />
       <div className="container">
         <div className="row">
-          <div className="col-6  d-flex flex-column justify-content-center">
+          <div className="col-6 d-flexflex-column justify-content-center">
             <p
               className="poppins-medium"
-              style={{ fontSize: 65, lineHeight: 1 }}
+              style={{ fontSize: 55, lineHeight: 1 }}
             >
-              Get In{" "}
+              Request a<br></br>
               <span className="poppins-bold" style={{ color: "#52B0AC" }}>
-                Touch
+            Personalized<br></br> Demo
               </span>
             </p>
+            <img
+              src={require("../../Images/demo.png")}
+              style={{ width: 350, height: 350, objectFit: "cover",position:"relative",top:-90,zIndex:-1 }}
+            />
+          </div>
+          <div className="col-6  d-flex flex-column justify-content-center">
             <div className="m-3" />
             <div className="d-flex align-items-center" style={{ gap: 45 }}>
               <span style={{ whiteSpace: "pre" }}>Your Name</span>
@@ -67,14 +73,8 @@ const Contactus = () => {
               <span style={{ whiteSpace: "pre" }}></span>
               <Button btnTitle={"Submit"} />
             </div>
-            
-              <div className="m-4"></div>
-          </div>
-          <div className="col-6 d-flex justify-content-center">
-            <img
-              src={require("../../Images/contactvector.png")}
-              style={{ width: 450, height: 450, objectFit: "cover" }}
-            />
+
+            <div className="m-4"></div>
           </div>
         </div>
       </div>
@@ -83,4 +83,4 @@ const Contactus = () => {
   );
 };
 
-export default Contactus;
+export default Demo;

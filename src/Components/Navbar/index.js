@@ -38,8 +38,8 @@ const Navbar = () => {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="/RegisterNow">
-                <h6 className="mb-0">Register Now</h6>
+                <a class="nav-link active fw-bold" aria-current="page" href="/Demo  ">
+                <h6 className="mb-0">Demo</h6>
                 </a>
               </li>
             </ul>

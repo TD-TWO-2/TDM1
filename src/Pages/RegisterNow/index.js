@@ -1,127 +1,42 @@
 import React from "react";
-import { Bar, Line, Pie } from "react-chartjs-2";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  LineElement,
-  PointElement,
-  ArcElement,
-  Title,
-  Tooltip,
-  Legend,
-} from "chart.js";
-
-// Register the components for Chart.js
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  LineElement,
-  PointElement,
-  ArcElement,
-  Title,
-  Tooltip,
-  Legend
-);
+import Navbar from "../../Components/Navbar";
+import Footer from "../../Components/Footer";
+import "./RegisterNow.css";
+import TextInput from "../../Components/TextInput";
+import Button from "../../Components/Button";
+import TextArea from "../../Components/TextArea";
 
 const RegisterNow = () => {
-  // Data for the bar chart
-  const barData = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
-    datasets: [
-      {
-        label: "Sales",
-        data: [65, 99, 35, 81, 44, 55, 85],
-        backgroundColor: "pink",
-        borderColor: "pink",
-        borderWidth: 1,
-      },
-      {
-        label: "Asd",
-        data: [65, 59, 80, 81, 56, 55, 40],
-        backgroundColor: "rgba(75,192,192,0.4)",
-        borderColor: "rgba(75,192,192,1)",
-        borderWidth: 1,
-      },
-    ],
-  };
-
-  // Data for the pie chart
-  const pieData = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
-    datasets: [
-      {
-        label: "Sales Distribution",
-        data: [65, 59, 80, 81, 56, 55, 40],
-        backgroundColor: [
-          "red",
-          "blue",
-          "#FFCE56",
-          "#FF6384",
-          "#36A2EB",
-          "#FFCE56",
-          "#FF6384",
-        ],
-        hoverBackgroundColor: [
-          "#FF6384",
-          "#36A2EB",
-          "#FFCE56",
-          "#FF6384",
-          "#36A2EB",
-          "#FFCE56",
-          "#FF6384",
-        ],
-      },
-    ],
-  };
-
-  // Options for the charts
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: "top",
-      },
-      title: {
-        display: true,
-        text: "Sales Data",
-      },
-    },
-    scales: {
-      x: {
-        grid: {
-          display: false, // Remove grid lines from the x-axis for bar chart
-        },
-      },
-      y: {
-        grid: {
-          display: false, // Remove grid lines from the y-axis for bar chart
-        },
-      },
-    },
-  };
-
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-6">
-          <Bar data={barData} options={options} />
-        </div>
-        <div className="col-6">
-          <Pie data={pieData} options={options} />
+    <>
+      <Navbar />
+      <div className="bg">
+        <div className="container d-flex justify-content-center">
+          <div className="contactForm my-5">
+            <h1 className="mb-1 marcellus-regular">RegisterNow</h1>
+            <div>
+              <div className="m-3"></div>
+              <TextInput placeHolder="Enter Name" label="Enter Name" backgroundColor={'#EDF1FC'}/>
+              <TextInput placeHolder="Enter Email" label="Enter Email" backgroundColor={'#EDF1FC'}/>
+              <TextInput placeHolder="Enter Password" label="Enter Password" backgroundColor={'#EDF1FC'}/>
+              <TextInput placeHolder="Confirm Password" label="Confirm Password" backgroundColor={'#EDF1FC'}/>
+              {/* <div className="d-flex flex-column flex-md-row justify-content-between gap-10">
+                <TextInput placeHolder="Phone Number" label="Phone Number" backgroundColor={'#EDF1FC'} />
+                <TextInput placeHolder="Enter Email" label="Enter Email" backgroundColor={'#EDF1FC'} />
+              </div> */}
+              {/* <TextArea placeHolder="Enter Message" label="Message" backgroundColor={'#EDF1FC'}/> */}
+              <div className="m-3"/>
+              <Button btnTitle={'Submit'}/>
+              <div className="m-3"></div>
+                <div className="d-flex justify-content-center">
+              <label className="TextInputLabel roboto-medium text-center">Already have an Account <a href="#" class="pe-auto">Login</a></label>
+                </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="row">
-        <div className="col-6">
-          <Line data={barData} options={options} />
-        </div>
-        <div className="col-6">
-          {/* Additional chart can be added here */}
-        </div>
-      </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 

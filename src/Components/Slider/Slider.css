@@ -12,7 +12,7 @@
     align-items: center;
     background: #F1F2FA;
   }
-  button {
+  /* button {
     margin: 10px;
     background-color: white;
     border: transparent;
@@ -20,7 +20,7 @@
     height: 50px;
     width: 50px;
     border-radius: 500px;
-  }
+  } */
   .main-wrapper {
     display: flex;
     flex-direction: column;
