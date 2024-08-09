@@ -76,7 +76,7 @@ const Home = () => {
       <Navbar />
       <div className="container">
         <div className="row">
-          <div className="col-6  d-flex flex-column justify-content-center">
+          <div className="col-lg-6 col-md-12  d-flex flex-column justify-content-center">
             <p
               className="poppins-extrabold"
               style={{ fontSize: 65, lineHeight: 1 }}
@@ -103,7 +103,7 @@ const Home = () => {
               </button>
             </Link>
           </div>
-          <div className="col-6 d-flex justify-content-center">
+          <div className="col-lg-6 col-md-12 d-flex justify-content-end">
             <img
               src={require("../../Images/dashboardImage.png")}
               style={{ width: 450, height: 450 }}

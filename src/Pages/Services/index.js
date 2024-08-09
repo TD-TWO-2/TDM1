@@ -138,33 +138,7 @@ const Service = () => {
 
         <Slider servicesData2={servicesData2} /> */}
 
-        <div className="row align-items-center mb-5">
-          <div className="col-12 col-md-6 d-flex justify-content-center mb-4 mb-md-0">
-            <div>
-              <h1
-                className="poppins-bold"
-                style={{ color: "#52B0AC" }}
-              >
-                Cyber Security
-              </h1>
-              <p className="marcellus-regular text-dark">
-                As we all are well aware that cybersecurity is of utmost
-                importance in the current scenario. We at Treedac Innovations
-                are dedicated to making sure that your digital data is well
-                guarded from every conceivable online threat to your data,
-                giving you well deserved mental peace so that you can focus on
-                your other priorities.
-              </p>
-            </div>
-          </div>
-          <div className="col-12 col-md-6 d-flex justify-content-center">
-            <img
-              src={require("../../Images/CS.png")}
-              className="img-fluid"
-              alt="Cyber Security"
-            />
-          </div>
-        </div>
+
 
         <div className="row align-items-center mb-5">
           <div className="col-12 col-md-6  d-flex justify-content-center mb-4 mb-md-0">
@@ -218,6 +192,34 @@ const Service = () => {
               src={require("../../Images/mobile2.png")}
               className="img-fluid"
               alt="Mobile App Development"
+            />
+          </div>
+        </div>
+
+        <div className="row align-items-center mb-5">
+          <div className="col-12 col-md-6 d-flex justify-content-center mb-4 mb-md-0">
+            <div>
+              <h1
+                className="poppins-bold"
+                style={{ color: "#52B0AC" }}
+              >
+                Cyber Security
+              </h1>
+              <p className="marcellus-regular text-dark">
+                As we all are well aware that cybersecurity is of utmost
+                importance in the current scenario. We at Treedac Innovations
+                are dedicated to making sure that your digital data is well
+                guarded from every conceivable online threat to your data,
+                giving you well deserved mental peace so that you can focus on
+                your other priorities.
+              </p>
+            </div>
+          </div>
+          <div className="col-12 col-md-6 d-flex justify-content-center">
+            <img
+              src={require("../../Images/CS.png")}
+              className="img-fluid"
+              alt="Cyber Security"
             />
           </div>
         </div>
