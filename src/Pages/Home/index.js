@@ -79,9 +79,9 @@ const Home = () => {
           <div className="col-lg-6 col-md-12  d-flex flex-column justify-content-center">
             <p
               className="poppins-extrabold"
-              style={{ fontSize: 65, lineHeight: 1 }}
+              style={{ fontSize: 50, lineHeight: 1 }}
             >
-              <span style={{ color: "#52B0AC" }}> We </span> specialize<br></br>
+              <span style={{ color: "#52B0AC" }}>We</span> specialize<br></br>
               <span style={{ color: "#52B0AC" }}>in managing</span> what matters
               <br></br> <span style={{ color: "#52B0AC" }}>to you</span>
             </p>
@@ -112,34 +112,34 @@ const Home = () => {
         </div>
         <div className="m-5" />
         <div className="row">
-          <div className="col-2 poppins-medium mt-1">
+          <div className="col-lg-2 col-md-4 d-flex flex-column justify-content-center align-items-center poppins-medium mt-4 mt-xs-1">
             <h1 className="">71k+</h1>
             <span>Active Member</span>
           </div>
-          <div className="col-2 poppins-medium mt-1">
+          <div className="col-lg-2 col-md-4 d-flex flex-column justify-content-center align-items-center poppins-medium mt-4 mt-xs-1">
             <h1 className="">65k+</h1>
-            <span>Success Member</span>
+            <span style={{whiteSpace:'pre'}}>Success Member</span>
           </div>
-          <div className="col-2 poppins-medium mt-1">
+          <div className="col-lg-2 col-md-4 d-flex flex-column justify-content-center align-items-center poppins-medium mt-4 mt-xs-1">
             <h1 className="">876k+</h1>
-            <span>Project Completed</span>
+            <span style={{whiteSpace:'pre'}}>Project Completed</span>
           </div>
-          <div className="col-6 poppins-bold mt-1 d-flex justify-content-center align-items-center">
+          <div className="col-lg-6 col-md-12 poppins-bold mt-sm-4 mt-md-5 d-flex justify-content-center align-items-end">
             <span style={{ color: "#52B0AC", textAlign: "center" }}>
               Capture current data with our system
             </span>
           </div>
         </div>
         <div className="m-5" />
-        <div className="row d-flex align-items-center">
+        <div className="row d-flex align-items-center justify-content-between">
           <span
-            className="poppins-semibold"
-            style={{ color: "#52B0AC", position: "relative", top: 20 }}
+            className="poppins-semibold text-md-start text-center"
+            style={{ color: "#52B0AC",  }}
           >
             <u>Feature</u>
           </span>
 
-          <div className="col-3" style={{ color: "#52B0AC" }}>
+          <div className="col-xl-2 col-lg-3 col-md-6 col-sm-6 d-flex justify-content-center " style={{ color: "#52B0AC" }}>
             <ul>
               <li>Monitor time entry</li>
               <li>Manage labour cost</li>
@@ -149,7 +149,7 @@ const Home = () => {
               <li>Manage labour cost</li>
             </ul>
           </div>
-          <div className="col-3" style={{ color: "#52B0AC" }}>
+          <div className="col-xl-2 col-lg-3 col-md-6 col-sm-6 d-flex justify-content-center" style={{ color: "#52B0AC" }}>
             <ul>
               <li>Monitor time entry</li>
               <li>Manage labour cost</li>
@@ -159,7 +159,8 @@ const Home = () => {
               <li>Manage labour cost</li>
             </ul>
           </div>
-          <div className="col-2 d-flex flex-column justify-content-center align-items-center">
+           {/* <div className="col-xxl-2 .d-xl-none .d-xxl-block"></div> */}
+          <div className="col-xl-2  col-lg-4  d-flex flex-column justify-content-center align-items-center">
             <img src={require("../../Images/motivation.png")} />
             <h3 className="poppins-medium my-2" style={{ color: "#52B0AC" }}>
               Moto
@@ -169,7 +170,7 @@ const Home = () => {
               work dynamics
             </p>
           </div>
-          <div className="col-2 d-flex flex-column justify-content-center align-items-center">
+          <div className="col-xl-2 col-lg-4 d-flex flex-column justify-content-center align-items-center">
             <img src={require("../../Images/motivation.png")} />
             <h3 className="poppins-medium my-2" style={{ color: "#52B0AC" }}>
               Mission
@@ -179,7 +180,7 @@ const Home = () => {
               work dynamics
             </p>
           </div>
-          <div className="col-2 d-flex flex-column justify-content-center align-items-center">
+          <div className="col-xl-2 col-lg-4  d-flex flex-column justify-content-center align-items-center">
             <img src={require("../../Images/motivation.png")} />
             <h3 className="poppins-medium my-2" style={{ color: "#52B0AC" }}>
               vision
