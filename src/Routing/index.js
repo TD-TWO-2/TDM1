@@ -5,6 +5,7 @@ import Service from '../Pages/Services'
 import Contactus from '../Pages/Contactus'
 import RegisterNow from '../Pages/RegisterNow'
 import Demo from '../Pages/Demo'
+import TreedecDashboard from '../Pages/TreedecDashboard'
 
 const Routing = () => {
   return (
@@ -15,6 +16,7 @@ const Routing = () => {
       <Route path="/Contactus" element={<Contactus />} />
       <Route path="/RegisterNow" element={<RegisterNow />} />
       <Route path="/Demo" element={<Demo />} />
+      <Route path="/TreedecDashboard" element={<TreedecDashboard />} />
     </Routes>
   </BrowserRouter>
   )

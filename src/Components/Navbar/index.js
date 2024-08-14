@@ -38,8 +38,13 @@ const Navbar = () => {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="/Demo  ">
+                <a class="nav-link active fw-bold" aria-current="page" href="/Demo">
                 <h6 className="mb-0">Demo</h6>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="/TreedecDashboard  ">
+                <h6 className="mb-0">TreedecDashboard</h6>
                 </a>
               </li>
             </ul>
